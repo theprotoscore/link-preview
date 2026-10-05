@@ -9,7 +9,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Geist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aboreto&amp;family=Figtree:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap"
+    />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/hero.css" />
@@ -17,66 +25,56 @@
     <title>Link - preview</title>
   </head>
   <body>
-    
-      <header>
-        <div class="header-wrapper">
-          <div class="logo">
-            <i class="fa-solid fa-link"></i>
+    <header>
+      <div class="header-wrapper">
+        <div class="logo">
+          <i class="fa-solid fa-link"></i>
+        </div>
+
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-wrapper">
+          <div class="hero-left-box">
+            <h1>Link preview</h1>
+
+            <p class="description">
+              A link preview is a rich card rendered from a URL's metadata. The
+              app fetches the target page, parses its Open Graph, Twitter Card,
+              or oEmbed data, and displays the title, description, thumbnail,
+              and site name, so users can evaluate a link without following it.
+            </p>
+
+            <div class="hero-buttons">
+              <button class="get-started">Get Started</button>
+              <button class="learn-more">Learn More</button>
+            </div>
           </div>
 
-          <nav aria-label="Main Navigation">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </nav>
+          <div class="hero-right-box">
+            <!-- <div class="circle"></div> -->
+            <img src="./images/pexels-steve-29506606.jpg" alt="" />
+          </div>
         </div>
-      </header>
-      <main>
-        <section class="hero">
-          <div class="hero-wrapper">
-            <div class="hero-left-box">
-              <h1>Link Preview</h1>
-              <p class="description">
-                A link preview is a rich card rendered from a URL's metadata.
-                The app fetches the target page, parses its Open Graph, Twitter
-                Card, or oEmbed data, and displays the title, description,
-                thumbnail, and site name, so users can evaluate a link without
-                following it.
-              </p>
-              <div class="hero-buttons">
-                <button class="get-started">Get Started</button>
-                <button class="learn-more">Learn More</button>
-              </div>
-            </div>
+      </section>
 
-            <div class="hero-right-box">
-              <div class="circle"></div>
-              <img
-                src="./images/Isometric-Tech-Docking-Hub-Diagram.png"
-                alt=""
-              />
-            </div>
-          </section>
-        </div>
-
-        <div class="wrapper">
-          <section class="demo-grid-container">
-            <div class="demo-item">demo item 1</div>
-            <div class="demo-item">demo item 2</div>
-            <div class="demo-item">demo item 3</div>
-            <div class="demo-item">demo item 4</div>
-            <div class="demo-item">demo item 5</div>
-            <div class="demo-item">demo item 6</div>
-            <div class="demo-item">demo item 7</div>
-            <div class="demo-item">demo item 8</div>
-            <div class="demo-item">demo item 9</div>
-          </section>
-        </div>
-      </main>
-      <footer></footer>
-
+      <div class="wrapper">
+        <section class="demo-grid-container">
+          <div class="demo-item">demo item 1</div>
+          <div class="demo-item">demo item 2</div>
+          <div class="demo-item">demo item 3</div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
