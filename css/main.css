@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background:
+    fixed linear-gradient(#fbe331, #fbe331 6px, transparent 6px, transparent),
+    fixed linear-gradient(transparent, #070707 70%),
+    fixed
+      repeating-linear-gradient(
+        #2b2b2b,
+        #2b2b2b 1px,
+        transparent 1px,
+        transparent 40px
+      ),
+    fixed
+      repeating-linear-gradient(
+        to right,
+        #2b2b2b,
+        #2b2b2b 1px,
+        transparent 1px,
+        transparent 40px
+      )
+      #070707;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.hero {
+  background-color: #003f9d;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 50px;
+}
+
+.hero .description {
+  font-size: 1rem;
+  max-width: 600px;
+  letter-spacing: 0.5px;
+}
+
+.hero-buttons button {
+  padding: 12px 20px;
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: bolder;
+
+  border-radius: 40px;
+}
+
+.get-started {
+  /* color: #9d0000; */
+  color: #003f9d;
+  border: none;
+}
+
+.learn-more {
+  /* background-color: #9d0000; */
+  background-color: #003f9d;
+  color: #d4d4d4;
+  border: 1px solid #ccc;
+}
+
+.hero-left-box {
+  position: relative;
+  z-index: 1; /* keeps the text above the circle */
+  text-align: left;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 75px;
+  color: #d4d4d4;
+}
+
+.hero-right-box {
+  position: relative; /* the circle now positions itself against this box */
+  isolation: isolate; /* keeps the circle's z-index: -1 inside this box */
+  max-width: 350px;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .hero-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  .hero-left-box {
+    text-align: center;
+    align-self: center;
+  }
+
+  .hero-right-box {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 80px;
+  }
+
+  .circle {
+    width: 115%; /* slightly smaller so it isn't clipped on narrow phones */
+  }
+}
+
+.hero-right-box img {
+  width: 100%;
+  height: auto;
+}
+
+.demo-grid-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  /* background-color: green; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.demo-item {
+  padding: 2rem;
+  background-color: #003f9d;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+/* .hero {
+  background-color: rgba(0, 63, 157, 0.85);
+} */
+.hero {
+  background: linear-gradient(#003f9d 60%, transparent);
+}

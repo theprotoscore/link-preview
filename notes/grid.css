@@ -1,0 +1,21 @@
+/* .demo-grid-container {
+  background-color: green;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+  gap: 1rem;
+} */
+/* can also adjust */
+/* grid-template-columns: 300px 300px 400px;
+  grid-template-rows: 300px 300px 400px; */
+
+/* Responsive version */
+/* Fractions behave relative to grid container */
+/* .demo-grid-container {
+  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+} */
+/* Can also be relative to one another */
