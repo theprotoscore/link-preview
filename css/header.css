@@ -6,7 +6,7 @@ header {
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-
+  font-family: "Figtree", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 50px;
@@ -26,9 +26,9 @@ ul {
   display: flex;
   gap: 20px;
   padding: 10px;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: bolder;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 a {
@@ -38,7 +38,7 @@ a {
 
 .logo i {
   font-size: 3rem;
-  color: #ccc;
+  color: #ff9900;
 }
 
 .header-wrapper {

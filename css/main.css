@@ -90,6 +90,7 @@ h1 {
 
 .get-started {
   /* color: #9d0000; */
+  background-color: #ff9900;
   color: #003f9d;
   border: none;
 }
@@ -103,7 +104,7 @@ h1 {
 
 .hero-left-box {
   text-align: left;
-
+  font-family: "Figtree", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -111,8 +112,8 @@ h1 {
 }
 
 .hero-right-box {
-  max-width: 500px;
-  height: 221px;
+  max-width: 600px;
+  /* height: 221px; */
   display: flex;
   align-items: center; /* Centers the image vertically */
   justify-content: center;
@@ -161,6 +162,6 @@ h1 {
   background-color: #003f9d;
   text-align: center;
   color: #fff;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   font-size: 1rem;
 }
