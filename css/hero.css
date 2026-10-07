@@ -1,3 +1,13 @@
+:root {
+  --cream: #fcfbf8;
+  --ink: #1c1c1c;
+  --grid: rgba(28, 28, 28, 0.07);
+  --blue: #4b73ff;
+  --purple: #a855f7;
+  --pink: #ff4d8d;
+  --orange: #ff8a3d;
+}
+
 h1 {
   font-size: 4rem;
   /* text-transform: uppercase; */
@@ -6,32 +16,15 @@ h1 {
   font-family: "Figtree", sans-serif;
 }
 
-/* .hero {
-  background-color: #003f9d;
-} */
-/* .hero {
-  background-color: rgba(0, 63, 157, 0.85);
-} */
-/* .hero {
-  background: linear-gradient(#003f9d 60%, transparent);
-} */
-/* .hero {
-  background: rgba(0, 63, 157, 0.55);
-} */
-/* .hero {
-  background: linear-gradient(
-    rgba(0, 63, 157, 0.4),
-    rgba(0, 63, 157, 0.85) 50%,
-    rgba(0, 63, 157, 0.4)
-  );
-} */
 .hero {
   background: linear-gradient(
-    rgba(0, 63, 157, 0.5),
-    rgba(0, 63, 157, 0.85) 40%,
-    rgba(0, 63, 157, 0.85) 65%,
+    135deg,
+    rgba(75, 115, 255, 0.55),
+    rgba(168, 85, 247, 0.5) 40%,
+    rgba(255, 77, 141, 0.45) 65%,
     transparent
   );
+  padding-bottom: 80px;
 }
 
 .hero-wrapper {
@@ -57,20 +50,30 @@ h1 {
   font-size: 16px;
   font-weight: bolder;
 
-  border-radius: 40px;
+  /* border-radius: 40px; */
 }
 
 .get-started {
-  /* color: #9d0000; */
-  background-color: #ff9900;
-  color: #003f9d;
+  background: var(--ink);
+  color: #fff;
   border: none;
+  transition: all 300ms ease-in-out;
+}
+.get-started:hover {
+  background-color: #fff;
+  color: var(--ink);
 }
 
 .learn-more {
-  background-color: #003f9d;
-  color: #d4d4d4;
-  border: 1px solid #ccc;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid rgba(28, 28, 28, 0.25);
+  transition: all 300ms ease-in-out;
+}
+
+.learn-more:hover {
+  background-color: var(--ink);
+  color: var(--pink);
 }
 
 .hero-left-box {
@@ -79,11 +82,11 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #d4d4d4;
+  color: var(--ink);
 }
 
 .hero-right-box {
-  max-width: 550px;
+  max-width: 600px;
   /* height: 221px; */
   display: flex;
   align-items: center; /* Centers the image vertically */
@@ -97,7 +100,7 @@ h1 {
   border-radius: 10px;
 }
 
-@media (max-width: 984px) {
+@media (max-width: 1080px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -109,15 +112,16 @@ h1 {
   .hero-left-box {
     text-align: left;
     align-self: center;
+    max-width: 600px;
   }
 
   .hero-right-box {
-    max-width: 300px;
+    max-width: 400px;
     margin-top: 30px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 864px) {
   h1 {
     font-size: 4rem;
   }
@@ -164,7 +168,7 @@ h1 {
 
 @media (max-width: 441px) {
   .hero-buttons button {
-    padding: 0.75rem 1.25rem;
+    padding: 1rem 1.6rem;
     font-size: 0.9rem;
   }
 }

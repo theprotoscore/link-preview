@@ -5,27 +5,38 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: system-ui, sans-serif;
+  color: var(--ink);
   background:
-    fixed linear-gradient(#fbe331, #fbe331 6px, transparent 6px, transparent),
+    /* colorful glow at the bottom of the screen */
     fixed
-      linear-gradient(transparent, rgba(7, 7, 7, 0.85) 50%, rgba(7, 7, 7, 0.75)),
+      linear-gradient(
+        transparent 55%,
+        rgba(255, 138, 61, 0.25) 80%,
+        rgba(255, 77, 141, 0.3) 100%
+      ),
+    /* cream wash that fades the grid toward the middle */ fixed
+      linear-gradient(
+        transparent,
+        rgba(252, 251, 248, 0.85) 50%,
+        rgba(252, 251, 248, 0.6)
+      ),
     fixed
       repeating-linear-gradient(
-        #3a3a3a,
-        #3a3a3a 1px,
+        var(--grid),
+        var(--grid) 1px,
         transparent 1px,
         transparent 40px
       ),
     fixed
       repeating-linear-gradient(
         to right,
-        #3a3a3a,
-        #3a3a3a 1px,
+        var(--grid),
+        var(--grid) 1px,
         transparent 1px,
         transparent 40px
       )
-      #070707;
+      var(--cream);
 }
 
 .demo-grid-container {
@@ -40,10 +51,9 @@ body {
 }
 
 .demo-item {
-  padding: 2rem;
-  background-color: #003f9d;
-  text-align: center;
-  color: #fff;
-  /* border-radius: 8px; */
-  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(28, 28, 28, 0.08);
+  color: var(--ink);
+  border-radius: 16px;
 }

@@ -126,3 +126,9 @@ a {
     max-height: 300px;
   }
 }
+
+@media (max-width: 441px) {
+  ul {
+    font-size: 1.25rem;
+  }
+}
